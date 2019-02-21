@@ -9,7 +9,9 @@
   :depends-on ()
   :components ((:module "src"
                 :components
-                ((:file "example-project"))))
+                ((:file "packages")
+                 (:file "lib" :depends-on ("package"))
+                 (:file "parser" :depends-on ("package")))))
   :description ""
   :long-description
   #.(read-file-string

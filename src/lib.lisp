@@ -1,6 +1,3 @@
-(defpackage example-project
-  (:use :cl :asdf))
-
 (in-package :example-project)
 
 (defun reverse-list (seq &optional result)
